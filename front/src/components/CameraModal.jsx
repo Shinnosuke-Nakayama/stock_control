@@ -24,7 +24,7 @@ export function CameraModal({ open, setOpen, setIsUpload }) {
   //   const navigate = useNavigate();
 
   const videoConstraints = {
-    facingMode: "user",
+    facingMode: "environment",
   };
 
   const onClickScreenShot = useCallback(async () => {
