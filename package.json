@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "npm install && cd front && npm install && npm run build && rm -rf ../public && cp -r dist ../public",
+    "build": "npm install && npm run migrate && npm run seed && cd front && npm install && npm run build && rm -rf ../public && cp -r dist ../public",
     "migrate": "npx knex migrate:latest",
     "migrate-make": "npx knex migrate:make",
     "seed": "npx knex seed:run",
